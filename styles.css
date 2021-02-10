@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(250, 242, 242);
+}
+
+header{
+    text-align: center;
+    border-bottom: navy;
+}
+
+.header-title {
+    background-color: rgb(47, 61, 105);
+    color: #fff;
+}
+
+.container,
+.contact-info
+{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 768px) {
+
+}
