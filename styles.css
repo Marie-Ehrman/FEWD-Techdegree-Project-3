@@ -1,23 +1,156 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
 body {
-    background-color: rgb(250, 242, 242);
+    background-color: #fff;
+    color: #2C3B47;
+    padding: 0;
+    margin: 0;
 }
 
 header{
     text-align: center;
-    border-bottom: navy;
 }
 
 .header-title {
-    background-color: rgb(47, 61, 105);
+    text-transform: uppercase;
+    font-size: 1.25em;
+    background-color: #2A3947;
     color: #fff;
+    width: 100vw;
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+
+main {
+    padding: 0;
+}
+
+.header-text {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+header p {
+    color: #CBCFD1;
+    font-weight: lighter;
+}
+
+.border-div {
+    border-top: solid #2A3947 5px;
+    padding: 2px;
+    margin-top: 25px;
+}
+
+form {
+    padding: 0;
+    border-top: solid #2A3947 2px;
 }
 
 .container,
-.contact-info
+.contact-info,
+.newsletter-checkbox,
+.newsletter-radios
 {
     display: flex;
     flex-direction: column;
 }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin: 20px 0;
+    padding: 0;
+
+}
+
+fieldset,
+.contact-info input,
+.contact-info select,
+textarea,
+#submit-button
+{
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+label {
+    font-weight: 300;
+    color: #667B8B;
+}
+
+.contact-info label {
+    margin: 15px 0;
+}
+
+input::placeholder {
+    overflow: visible;
+    text-align: right;
+    color: #CBCFD1;
+    font-style: italic;
+}
+
+.contact-info input,
+select {
+    background-color: #EEF0F1;
+    border-radius: 5px;
+    height: 45px;
+    padding-right: 15px;
+}
+
+#state {
+    color: #CBCFD1;
+}
+
+#zip {
+    width: 50%;
+}
+
+.newsletter-border-div {
+    border-top: solid #2A3947 2px;
+}
+
+.newsletter input {
+    margin: 10px;
+}
+
+textarea {
+    resize: none;
+    background-color: #EEF0F1;
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#submit-button {
+    background-color: #00BEB6;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+}
+
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    font-style: italic;
+    color: #CBCFD1;
+}
+
 
 @media(min-width: 768px) {
 
