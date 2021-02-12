@@ -53,7 +53,14 @@ form {
 .container,
 .contact-info,
 .newsletter-checkbox,
-.newsletter-radios
+.newsletter-radios,
+.name,
+.email,
+.phone,
+.address,
+.city,
+.state,
+.zip
 {
     display: flex;
     flex-direction: column;
@@ -61,6 +68,7 @@ form {
 
 .container {
     width: 90%;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -105,7 +113,7 @@ input::placeholder {
 select {
     background-color: #EEF0F1;
     border-radius: 5px;
-    height: 45px;
+    height: 50px;
     padding-right: 15px;
 }
 
@@ -153,5 +161,35 @@ footer {
 
 
 @media(min-width: 768px) {
+
+    .contact-info label {
+        width: 150px;
+    }
+
+    .name,
+    .email,
+    .phone,
+    .address,
+    .city,
+    .state,
+    .zip
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    #name,
+    #email,
+    #phone,
+    #address,
+    #city,
+    #state,
+    #zip
+    {
+        flex-grow: 1;
+        margin: 20px 0 0 15px;
+    }
 
 }
