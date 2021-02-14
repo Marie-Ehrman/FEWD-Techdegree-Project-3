@@ -21,7 +21,7 @@ header {
     color: #fff;
     width: 100vw;
     padding: 20px;
-    margin: 0 0 20px 0;
+    margin-bottom: 20px;
 }
 
 main {
@@ -50,11 +50,6 @@ form {
     border-top: solid #2A3947 2px;
 }
 
-.newsletter {
-    background-color: paleturquoise;
-    padding: 0 5px;
-}
-
 .contact-info input:focus,
 .contact-info select:focus,
 #other-topics:focus {
@@ -65,23 +60,17 @@ form {
     background-color: rgb(199, 199, 194);
 }
 
+fieldset {
+    margin: 20px 0;
+    padding: 5px 0;
+}
 
-.container,
-.contact-info,
-.newsletter-checkbox,
-.newsletter-radios,
-.name,
-.email,
-.phone,
-.address,
-.city,
-.state,
-.zip
+.flex-col
 {
     display: flex;
     flex-direction: column;
 }
-
+ 
 .container {
     width: 90%;
     max-width: 500px;
@@ -107,6 +96,8 @@ label,
 .newsletter p {
     font-weight: 300;
     color: #4d606e;
+    margin: 20px 0;
+
 }
 
 .contact-info label {
@@ -146,8 +137,7 @@ select {
 }
 
 .newsletter-border-div {
-    border-top: solid #2A3947 2px;
-    margin-bottom: 20px 0;
+    border-bottom: solid #2A3947 2px;
 }
 
 .newsletter input {
@@ -189,13 +179,7 @@ footer {
         width: 150px;
     }
 
-    .name,
-    .email,
-    .phone,
-    .address,
-    .city,
-    .state,
-    .zip
+    .row
     {
         display: flex;
         flex-direction: row;
@@ -203,12 +187,7 @@ footer {
         align-content: space-between;
     }
 
-    #name,
-    #email,
-    #phone,
-    #address,
-    #city,
-    #state
+    .grow
     {
         flex-grow: 1;
         margin: 20px 0 0 15px;
