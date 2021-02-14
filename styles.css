@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-header{
+header {
     text-align: center;
 }
 
@@ -55,7 +55,7 @@ form {
 #other-topics:focus {
     outline: none;
     border: solid 2px paleturquoise;
-    background-color: palegoldenrod;
+    background-color: rgb(199, 199, 194);
 }
 
 
@@ -115,14 +115,14 @@ label {
 {
     overflow: visible;
     text-align: right;
-    color: #CBCFD1;
+    color: #2a394796;
     font-style: italic;
 }
 
 textarea::placeholder{
     overflow: visible;
     text-align: left;
-    color: #CBCFD1;
+    color: #2a394796;
     font-style: italic;
 }
 
