@@ -35,7 +35,7 @@ main {
 }
 
 header p {
-    color: #CBCFD1;
+    color: #b9bcbd;
     font-weight: lighter;
 }
 
@@ -50,10 +50,17 @@ form {
     border-top: solid #2A3947 2px;
 }
 
+.newsletter {
+    background-color: paleturquoise;
+    padding: 0 5px;
+}
+
 .contact-info input:focus,
 .contact-info select:focus,
 #other-topics:focus {
     outline: none;
+    transition: 1s;
+    transform: scale(1.05);
     border: solid 2px paleturquoise;
     background-color: rgb(199, 199, 194);
 }
@@ -81,12 +88,6 @@ form {
     margin: 0 auto;
 }
 
-fieldset {
-    margin: 20px 0;
-    padding: 0;
-
-}
-
 fieldset,
 .contact-info input,
 .contact-info select,
@@ -102,9 +103,10 @@ legend {
     margin: 20px 0;
 }
 
-label {
+label,
+.newsletter p {
     font-weight: 300;
-    color: #667B8B;
+    color: #4d606e;
 }
 
 .contact-info label {
@@ -145,6 +147,7 @@ select {
 
 .newsletter-border-div {
     border-top: solid #2A3947 2px;
+    margin-bottom: 20px 0;
 }
 
 .newsletter input {
