@@ -99,6 +99,10 @@ label {
 
 }
 
+input {
+    transition: 1s;
+}
+
 .contact-info label {
     margin: 15px 0;
 }
